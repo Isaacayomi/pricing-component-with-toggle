@@ -10,12 +10,16 @@ body {
   background: #f7f7fe;
 }
 
-.card__container .bg__image {
+.card__container .top__bg__image {
   position: absolute;
   top: 0;
   right: 0;
   overflow: hidden;
   z-index: -1;
+}
+
+.card__container .bottom__bg__image {
+  display: none;
 }
 
 header h1 {
@@ -61,15 +65,21 @@ header p:nth-child(2) {
   display: flex;
   align-items: center;
   padding-left: 0.35rem;
+  transition: 0.2s ease-in-out;
+
   /* padding-left: 1.6rem; */
 }
 
 .toggle__btn {
-  transition: 0.2s linear ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .toggle__btn:hover {
   cursor: pointer;
+}
+
+.toggle__container:hover {
+  opacity: 0.5;
 }
 
 .toggle {
@@ -220,5 +230,36 @@ button.pro__btn:hover {
 }
 
 .move__toggle {
-  padding-left: 1.2rem;
+  margin-left: 1.28rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.03rem;
+  }
+
+  @media screen and (min-width: 1094px) {
+    main {
+      gap: 0;
+    }
+
+    .pro__card h3 {
+      padding-top: 3.41rem;
+    }
+
+    .pro__card button {
+      margin-bottom: 2.8rem;
+    }
+
+    .card__container .bottom__bg__image {
+      display: block;
+      position: absolute;
+      top: 69%;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+  }
 }

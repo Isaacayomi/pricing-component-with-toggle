@@ -3,7 +3,7 @@ const basicPrice = document.querySelector(".price__basic");
 const proPrice = document.querySelector(".price__pro");
 const masterPrice = document.querySelector(".price__master");
 
-toggleEl.addEventListener("click", function () {
+toggleEl.addEventListener("click", function (e) {
   if (!toggleEl.classList.contains("move__toggle")) {
     toggleEl.classList.add("move__toggle");
     basicPrice.textContent = 199.99;
