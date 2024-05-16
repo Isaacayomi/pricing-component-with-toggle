@@ -17,13 +17,14 @@ This is a solution to the [Pricing component with toggle challenge on Frontend M
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./toggle-component.png)
+./toggle-component.png
 
 A
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Isaacayomi/pricing-component-with-toggle)
+- Live Site URL: (https://prime-toggle-pricing-component.vercel.app/)
 
 ## My process
 
